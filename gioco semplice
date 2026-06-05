@@ -1,0 +1,55 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Benvenuti all'isola del tesoro.")
+print("La tua missione è di trovare il tesoro nascosto.")
+Scelta = input("Approdi nell'isola e dopo una lunga camminata arrivi a un bivio, giri a destra o sinitra ?")
+if Scelta == "destra" or Scelta == "Destra":
+    print("Sei caduto in un fossato! ")
+elif Scelta == "sinistra" or Scelta == "Sinistra":
+    print("Hai scelto bene, prosegui")
+else:
+    print("Scelta non valida")
+if Scelta == "sinistra" or Scelta == "Sinistra":
+    Scelta1 = input("Prosegui il tuo cammino ma c'è un fiume davanti a te, nuoti o aspetti ? ")
+    if Scelta1 == "nuoto" or Scelta1 == "Nuoto":
+        print("Mi spiace, un alligatore ti ha fatto a brandelli!")
+    elif Scelta1 == "aspetto" or Scelta1 == "Aspetto":
+        print("Sei fortunato, un fulmine ha abbattuto un alberto, che si è piazzato proprio"
+              " sul fiume permettendoti di passare!")
+    else:
+        print("Scelta non valida")
+    if Scelta1 == "aspetto" or Scelta1 == "Aspetto":
+       Scelta2 = input("Dopo un estenuante corsa arrivi davanti a tre porte,"
+                       " devi sceglierne una da aprire e questa scelta determinerà il tuo destino. "
+                       "Scegli la porta Rossa, Blu o Gialla?")
+       if Scelta2 == "rossa" or Scelta2 == "Rossa":
+        print("Mi dispiace, sei caduto in un fiume di lava. Hai perso!")
+       elif Scelta2 == "Blu" or Scelta2 == "blu":
+        print("Cavoli, appena entrato sei stato sedotto dalla fata mangia umani,"
+              " la quale ha fatto di te un bel pasticcino. Hai perso!")
+       elif Scelta2 == "Gialla" or Scelta2 == "gialla":
+        print("Complimenti! Il baule del tesoro è proprio davanti a te. "
+              "Torni a casa e vivrai nella bambagia per sempre! ")
+       else:
+        print("Scelta non valida, sei cosi confuso che ti perdi in un labirinto"
+              " e se avrai fortuna verrai mangiato da un troll!")
